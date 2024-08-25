@@ -12,3 +12,19 @@ const User = {
 
 // const greet = User.greet();
 console.log(User);
+User.name = "Dev";  // User["name"] another way to write same thing
+console.log(User);
+
+Object.freeze(User);
+User.name = "John Doe";
+console.log(User);
+
+
+// const tinderUser = new Object();  // Singleton Object
+const tinderUser = {}; // non singleton object
+
+tinderUser.name = "Sam";
+tinderUser.id = "123";
+tinderUser.isLoggedIn = false;
+
+console.log(tinderUser);
